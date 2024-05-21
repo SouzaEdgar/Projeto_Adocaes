@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="administracao.css">
+    <title>Administração</title>
+</head>
+
+<body>
+    <header id="siteHeader">
+        <nav id="mainMenu">
+            <a href="../home.php">
+                <img src="../imagens\logo.png" class="logo">
+            </a>
+            <a href="../home.php">Página Inicial</a>
+            <a href="../adotar/adotar.php">Adotar</a>
+            <a href="../home.php#como-adotar">Como Adotar</a>
+            <a href="../home.php#porque-adotar">Porque Adotar</a>
+            <a href="../ong/view/ongs.html">ONGs Parceiras</a>
+            <nav class="profile-nav">
+                <a href="administracao.html"><span id ='person' class="material-symbols-outlined">assignment</span> Administração</a>
+            </nav>
+        </nav>
+    </header>
+
+    <section class="tela-adm">
+        <div class="container-perfil">
+            <form action="update_adm.php" method="post" id="updateAdm">
+                <input type="hidden" id="idOng" name="idOng">
+                <div class="perfil-top">
+                    <h1><span class="material-symbols-outlined"> person</span> Perfil da ONG</h1>
+                    <span class="nome" id="nome-ong">Nome da Ong</span>
+                </div>
+                <br>
+                <label for="cnpj">CNPJ</label>
+                <div class="input-botao">
+                    <input type="cnpj" id="cnpj" name="cnpj" class="centra">
+                    <span class="material-symbols-outlined">stylus</span>
+                </div>
+    
+                    
+                <label for="telefone">Telefone</label>
+                <div class="input-botao">
+                    <input type="telefone" id="telefone" name="telefone" class="centra">
+                    <span class="material-symbols-outlined">stylus</span>
+                </div>
+    
+                    
+                <!--<label for="responsavel">Responsável</label>
+                <div class="input-botao">
+                <input type="responsavel" id="responsavel" name="responsavel">
+                </div> -->
+    
+                <label for="sobre-nos">Sobre nós</label>
+                <div class="input-botao">
+                    <textarea maxlength="80" placeholder="Fale brevemente sobre a sua instituição..."></textarea>
+                    <span class="material-symbols-outlined">stylus</span>
+                    <!--<span class="material-symbols-outlined">save</span> utilizar esse quando estiver habilitado para edição-->
+                </div>
+    
+                <label for="site">Meu site</label>
+                <div class="input-botao">
+                    <input type="site" id="site" name="site" class="centra">
+                </div>
+                <div class="botoes-perfil">
+                    <button name= "update" id = "update" type="submit">update</button>
+                </div>
+                
+            </form>
+            <div class="botoes-perfil">
+                <button onclick="openPopup()" class="botao-alterar-senha">Alterar Senha</button>
+                <a href="../home.php"><button class="botao-sair" onclick="logout()">Sair</button></a>
+            </div>
+        </div>
+        <div class="container-animais">
+            <div class="animais-top"> 
+                <h1 id="animais-registrados">Animais Registrados <span class="material-symbols-outlined">pets</span></h1> 
+                <button class="botao-add"> <a href="../cadastro_animal/cadastroAdocao.html">Adicionar Animal </a></button>
+            </div>
+            <div class ="todos-animais">
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scriptadm.js"></script>
+    <script src="../local_storage.js"></script>
+</body>
