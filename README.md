@@ -52,6 +52,6 @@ Agora com tudo pronto, volte ao painel do XAMPP e inicie o Apache (após iniciad
 
 **->** Com o localhost aberto, altere a URL do navegador para **localhost/adocaes/home.php**  
   
-**Pronto!** Você já esta utilizando o site em seu servidor local, dessa forma poderá criar perfis e visualizar a visão de um Adotante  
+**Pronto!** Você já esta utilizando o site em seu servidor local, dessa forma poderá criar perfis e visualizar a visão de um Adotante 
 ou até mesmo criar um login como ONG, e ter a visão de Administrador dos animais presentes.  
 
