@@ -253,18 +253,6 @@ h2 {
     justify-content: center;
 }
 
-/* CONFIGURACAO GERAL PARA BOTAO
-.todos-animais button {
-    background-color: #038FDE;
-    color: #fff;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-    width: 80px;
-    font-family: 'Poppins', sans-serif;
-} */
 .btn-edit-animal {
     background-color: #038FDE;
     color: #fff;
@@ -436,100 +424,7 @@ body.popup-aberto {
     width: 100%;
     text-align: center;
 }
-/*
-body.popup-aberto {
-    overflow: hidden;
-}
 
-.popup {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    overflow: hidden; / Oculta a barra de rolagem /
-}
-
-.popup-content {
-    background-color: #fff;
-    margin: 5% auto;
-    padding: 20px;
-    / border: 1px solid #ccc; /
-    border-radius: 10px;
-    width: 80%;
-    max-width: 600px;
-    max-height: calc(100% - 40px); / Ajuste conforme necessário para manter o conteúdo visível /
-    overflow: auto; / Adicione rolagem interna se o conteúdo ultrapassar a altura máxima /
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); / Adicionado sombra /
-}
-
-/ .popup-content img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 5px;
-} /
-.image-popup {
-    width: 100%;
-    height: 150px;
-    align-content: center;
-    overflow: hidden;
-    object-fit: cover;
-}
-.image-popup img {
-    width: 100%;
-    height: 100%;
-}
-
-.styleCard {
-    display: flex;
-    / gap: 10px; /
-}
- Estilo para o botão de salvar 
-.popup-content .botao-salvar {
-    background-color: #038FDE;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-.popup-content .botao-salvar:hover {
-    background-color: #FF8743;
-}
-
-.popup-content input {
-    border: none;
-    width: 15vw;
-    white-space: pre-line;
-    outline: none;
-    resize: none;
-    border-color: #ddd;
-}
-
-.popup-content select {
-    border: none;
-}
- Estilo do botão de fechar
-.fechar {
-    color: #555;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.fechar:hover {
-    color: #333;
-    font-size: 28px;
-}
-**/
 /*//////////////////////////////////////////////////////////////////////*/
 
 /*POPUP PERFIL*/
