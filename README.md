@@ -1,7 +1,7 @@
 # Projeto_Adocaes
 ## ADOCÃES: SOFTWARE PARA DIVULGAÇÃO DE ANIMAIS EM SITUAÇÃO DE ADOÇÃO
 
-**Como usar:**
+### **Como usar:**
 Sendo uma página realizada de forma local, é necessário seguir alguns critérios para o seu funcionamento.  
 -> Possuir um LocalHost para a comunicação da página com o Banco de Dados relacional (SQL).  
 
