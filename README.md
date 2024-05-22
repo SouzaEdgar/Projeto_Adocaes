@@ -32,7 +32,7 @@ Visto que a página utiliza PHP e um BD, o XAMPP possibilita e facilita a execu�
 ---
 ### **Banco de Dados - Adocães**
 Para criar o Banco de Dados com uma massa de dados (para testes) nós preparamos um query SQL
-Onde a mesma se encontra neste projeto, com o nome de criarBD_adocaes.sql  
+Onde a mesma se encontra neste projeto, com o nome de **criarBD_adocaes.sql**  
 **->** Abra o Painel de Controle do XAMPP  
 **->** Inicie o PHPMyAdmin e então clique em ADMIN  
    uma aba no seu navegador padrão ira ser aberta, essa aba permite você visualizar seus BDs  
