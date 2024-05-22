@@ -41,7 +41,7 @@ Onde a mesma se encontra neste projeto, com o nome de **criarBD_adocaes.sql**
 **->** Coloque como nome "**adocaes**" (sem acento mesmo) e clique em Criar  
 **->** No lado esquerdo sera criado o banco de dados adocaes, clique nele  
 **->** Vá para a opção SQL, localizada na parte de cima  
-**->** Copie e cole todo texto presente no arquivo criarBD_adocaes.sql (você pode abrir o arquivo com o bloco de notas para facilitar)  
+**->** Copie e cole todo texto presente no arquivo criarBD_adocaes.sql (você pode abrir o arquivo com o bloco de notas para facilitar, ou abrir aqui pelo github mesmo, para visualizar o texto e poder copia-lo)  
 **->** Para facilitar, desmarque a opção "Habilitar verificação de chaves estrangeiras", localizada na mesma linha do botão Executar  
 **->** Execute a query  
 **->** Pronto você já tem o banco de dados Adocaes montado e preenchido.  
