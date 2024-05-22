@@ -10,6 +10,7 @@ O XAMPP se trata de um pacote com os principais servidores de código aberto, qu
 Visto que a página utiliza PHP e um BD, o XAMPP possibilita e facilita a execução da página.
 ![Painel de Controle do XAMPP, imagem do site techtudo com materia sobre o XAMPP](https://s2-techtudo.glbimg.com/qfo1o2-x0Pruc9XimjZdH_rJ_n4=/0x0:753x476/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/h/x/eURLy6SSynAY7B33vmxg/2012-02-27-xampp-control.png)
 
+---
 ### **Como instalar o XAMPP:**
 **~** Pesquise por XAMPP em seu navegador  
    ou entre no link: https://www.apachefriends.org/pt_br/index.html  
@@ -27,7 +28,7 @@ Visto que a página utiliza PHP e um BD, o XAMPP possibilita e facilita a execu�
 **~** Após ser finalizada a instalação, você pode escoher já iniciar o XAMPP ou não  
 **~** Agora com o XAMPP instalado, vá dentro do local de destino selecionado para o arquivo  
 **~** Entre na pasta htdocs e coloque a pasta adocaes extraida do download deste projeto.  
-
+---
 ### **Banco de Dados - Adocães**
 Para criar o Banco de Dados com uma massa de dados (para testes) nós preparamos um query SQL
 Onde a mesma se encontra neste projeto, com o nome de criarBD_adocaes.sql  
@@ -38,11 +39,11 @@ Onde a mesma se encontra neste projeto, com o nome de criarBD_adocaes.sql
 **~** Coloque como nome "**adocaes**" e clique em Criar  
 **~** No lado esquerdo sera criado o banco de dados adocaes, clique nele  
 **~** Vá para a opção SQL, localizada na parte de cima  
-**~** Copie e cole a query presente no arquivo criarBD_adocaes.sql  
-**~** Para facilitar, desmarque a opção "Habilitar verificação de chaves estrangeiras", localizada na mesma linda do botão Executar  
+**~** Copie e cole todo texto presente no arquivo criarBD_adocaes.sql (você pode abrir o arquivo com o bloco de notas para facilitar)  
+**~** Para facilitar, desmarque a opção "Habilitar verificação de chaves estrangeiras", localizada na mesma linha do botão Executar  
 **~** Execute a query  
-**~** Pronto você já tem o banco de dados Adocaes montado  
-
+**~** Pronto você já tem o banco de dados Adocaes montado e preenchido.  
+---
 ### **Utilizando a página**
 Agora com tudo pronto, volte ao painel do XAMPP e inicie o Apache (após iniciado clique em Admin, para facilitar)  
 **~** Com o localhost aberto, altere a URL do navegador para localhost/adocaes/home.php  
