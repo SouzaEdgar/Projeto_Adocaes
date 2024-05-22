@@ -28,6 +28,7 @@ Visto que a página utiliza PHP e um BD, o XAMPP possibilita e facilita a execu�
 **~** Após ser finalizada a instalação, você pode escoher já iniciar o XAMPP ou não  
 **~** Agora com o XAMPP instalado, vá dentro do local de destino selecionado para o arquivo  
 **~** Entre na pasta htdocs e coloque a pasta adocaes extraida do download deste projeto.  
+
 ---
 ### **Banco de Dados - Adocães**
 Para criar o Banco de Dados com uma massa de dados (para testes) nós preparamos um query SQL
@@ -43,6 +44,7 @@ Onde a mesma se encontra neste projeto, com o nome de criarBD_adocaes.sql
 **~** Para facilitar, desmarque a opção "Habilitar verificação de chaves estrangeiras", localizada na mesma linha do botão Executar  
 **~** Execute a query  
 **~** Pronto você já tem o banco de dados Adocaes montado e preenchido.  
+
 ---
 ### **Utilizando a página**
 Agora com tudo pronto, volte ao painel do XAMPP e inicie o Apache (após iniciado clique em Admin, para facilitar)  
