@@ -171,16 +171,14 @@ function filtrarPopups() {
 }
 
 // POP UP MAIS DETALHES
-// Função para mostrar o popup de detalhes
 function mostrarDetalhes(idPopup) {
     const popup = document.getElementById(idPopup);
 
     popup.style.display = "block";
-    document.body.classList.add('popup-aberto'); // Fecha o overflow do Body quando abrir o popup
+    document.body.classList.add('popup-aberto');
     popup.addEventListener('click', function(event) {
         // Verifique se ocorreu clique dentro do PopUp ou fora
         if (!event.target.closest('.popup-content')) {
-            // Se foi fora, então é fechado o opopup
             fecharDetalhes(idPopup);
         }
     });
@@ -192,7 +190,7 @@ function fecharDetalhes(idPopup) {
     const popup = document.getElementById(idPopup);
     
     popup.style.display = "none";
-    document.body.classList.remove('popup-aberto'); // Remova a classe que fecha o overflow do Body quando fechar o popup
+    document.body.classList.remove('popup-aberto');
     console.log("mostrarDetalhes - DESLIGOU\nOverFlow - Ligado");
 }
 

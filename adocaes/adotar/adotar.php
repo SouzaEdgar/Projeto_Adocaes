@@ -75,7 +75,7 @@ header('Content-Type: text/html; charset=UTF-8');
                     </br>
                     </br>
 
-                    <button name= "update" id = "update" type="submit">update</button>
+                    <button name= "update" id = "update" type="submit">Salvar</button>
                 </div>
             </form>
 
@@ -84,7 +84,6 @@ header('Content-Type: text/html; charset=UTF-8');
                 <a ><button class="botao-sair" onclick="logout()">Sair</button></a>
             </div>
         </div>
-
     <main>
         <section id="animais-section">
             <div class="animais-top">
@@ -119,85 +118,82 @@ header('Content-Type: text/html; charset=UTF-8');
                     echo '<button onclick="mostrarDetalhes('.'\'popup'. $animal["id_Animal"] . '\')">Mais Detalhes</button>';
                     echo '</div>'; // Fechou .botao-mais-detalhes
                     echo '</div>'; // Fechou animal-carrossel
-                    //echo '</div>'; // Fechando o carrossel antes dos popup
+                ?>
+                <?php
+                    echo '<div id="popup'.$animal["id_Animal"] .'" class="popup">';
+                    echo '<div class="popup-content">';
+                    echo '<span class="fechar" onclick="fecharDetalhes('.'\'popup'. $animal["id_Animal"] . '\')">&times;</span>';
+                    echo '<div class="info_popup">';
+                    echo '<div class="imagem-animal">';
+                    echo '<img src="'.(($animal['url'] !== "") ? $animal['url'] : (($animal['tipo'] === 'C') ? '../Imagens/cachorro1.jpeg' : '../Imagens/gato1.jpeg')).
+                    '" alt="'.(($animal['tipo'] === 'C') ? 'Cachorro' : 'Gato').'">';
+                    echo '</div>'; // Fechou .imagem-animal
+                    echo '<div class="text-princ">';
+                    echo '<h1>'. $animal['nome'] .'</h1>';
+                    echo '<p>Raça '. $animal['raca'] .'</p>';
+                    echo '<p>'.(($animal['genero'] === 'F') ? 'Femea' : 'Macho').'</p>';
+                    echo '</div>'; // Fechou .text-princ
+                    echo '</div>'; // Fechou .info_popup
+
+                    echo '<h3>Mais Detalhes</h3>';
+                    echo '<div class="info">';
+
+                    echo '<div class="info-item">';
+                    echo '<p>Data de nascimento:</p>';
+                    echo '<span>'. $animal['nascimento'] . '</span>';
+                    echo '</div>'; // Fechou .info-item
+
+                    echo '<div class="info-item">';
+                    echo '<p>Porte:</p>';
+                    echo '<span>'. (($animal['porte'] === 'P') ? 'Pequeno' : (($animal['porte'] === 'M') ? 'Médio' : 'Grande')).'</span>';
+                    echo '</div>';// Fechou .info-item
+
+                    echo '<div class="info-item">';
+                    echo '<p>Cor:</p>';
+                    echo '<span>'. $animal['cor'] .'</span>';
+                    echo '</div>';// Fechou .info-item
+                    
+                    echo '<div class="info-item">';
+                    echo '<p>Castrado:</p>';
+                    echo '<span>'.(($animal['castrado'] === '1') ? 'Sim' : 'Não').'</span>';
+                    echo '</div>';// Fechou .info-item
+
+                    echo '<div class="info-item">';
+                    echo '<p>Vacinas:</p>';
+                    echo '<span>'. $animal['vacinas'] .'</span>';
+                    echo '</div>';// Fechou .info-item
+
+                    echo '<div class="info-item">';
+                    echo '<p>Observação:</p>';
+                    echo '<span>'. $animal['obs'] .'</span>';
+                    echo '</div>';// Fechou .info-item
+
+                    echo '<div class="info-item">';
+                    echo '<p>ONG:</p>';
+                    echo '<span>'. $animal['ong'] .'</span>';
+                    echo '</div>';// Fechou .info-item
+
+                    echo '<div class="info-item">';
+                    echo '<p>Cidade:</p>';
+                    echo '<span>'. $animal['cidade'] .'</span>';
+                    echo '</div>';// Fechou .info-item
+
+                    echo '<div class="info-item">';
+                    echo '<p>Estado:<p>';
+                    echo '<span>'. $animal['estado'] .'</span>';
+                    echo '</div>';// Fechou .info-item
+
+                    echo '<div class="info-item">';
+                    echo '<p>Telefone:</p>';
+                    echo '<span>'. $animal['telefone'] .'</span>';
+                    echo '</div>';// Fechou .info-item
+
+                    echo '</div>'; // Fechou .info
+                    echo '</div>'; // fechou .popup-content
+                    echo '</div>'; // fechou #popup-ID .popup
                 }
                 ?>
             </div>
-            <?php
-            foreach ($animais as $animal) {
-                echo '<div id="popup'.$animal["id_Animal"] .'" class="popup">';
-                echo '<div class="popup-content">';
-                echo '<span class="fechar" onclick="fecharDetalhes('.'\'popup'. $animal["id_Animal"] . '\')">&times;</span>';
-                echo '<div class="info_popup">';
-                echo '<div class="imagem-animal">';
-                echo '<img src="'.(($animal['url'] !== "") ? $animal['url'] : (($animal['tipo'] === 'C') ? '../Imagens/cachorro1.jpeg' : '../Imagens/gato1.jpeg')).
-                '" alt="'.(($animal['tipo'] === 'C') ? 'Cachorro' : 'Gato').'">';
-                echo '</div>'; // Fechou .imagem-animal
-                echo '<div class="text-princ">';
-                echo '<h1>'. $animal['nome'] .'</h1>';
-                echo '<p>Raça '. $animal['raca'] .'</p>';
-                echo '<p>'.(($animal['genero'] === 'F') ? 'Femea' : 'Macho').'</p>';
-                echo '</div>'; // Fechou .text-princ
-                echo '</div>'; // Fechou .info_popup
-
-                echo '<h3>Mais Detalhes</h3>';
-                echo '<div class="info">';
-
-                echo '<div class="info-item">';
-                echo '<p>Data de nascimento:</p>';
-                echo '<span>'. $animal['nascimento'] . '</span>';
-                echo '</div>'; // Fechou .info-item
-
-                echo '<div class="info-item">';
-                echo '<p>Porte:</p>';
-                echo '<span>'. (($animal['porte'] === 'P') ? 'Pequeno' : (($animal['porte'] === 'M') ? 'Médio' : 'Grande')).'</span>';
-                echo '</div>';// Fechou .info-item
-
-                echo '<div class="info-item">';
-                echo '<p>Cor:</p>';
-                echo '<span>'. $animal['cor'] .'</span>';
-                echo '</div>';// Fechou .info-item
-                
-                echo '<div class="info-item">';
-                echo '<p>Castrado:</p>';
-                echo '<span>'.(($animal['castrado'] === '1') ? 'Sim' : 'Não').'</span>';
-                echo '</div>';// Fechou .info-item
-
-                echo '<div class="info-item">';
-                echo '<p>Vacinas:</p>';
-                echo '<span>'. $animal['vacinas'] .'</span>';
-                echo '</div>';// Fechou .info-item
-
-                echo '<div class="info-item">';
-                echo '<p>Observação:</p>';
-                echo '<span>'. $animal['obs'] .'</span>';
-                echo '</div>';// Fechou .info-item
-
-                echo '<div class="info-item">';
-                echo '<p>ONG:</p>';
-                echo '<span>'. $animal['ong'] .'</span>';
-                echo '</div>';// Fechou .info-item
-
-                echo '<div class="info-item">';
-                echo '<p>Cidade:</p>';
-                echo '<span>'. $animal['cidade'] .'</span>';
-                echo '</div>';// Fechou .info-item
-
-                echo '<div class="info-item">';
-                echo '<p>Estado:<p>';
-                echo '<span>'. $animal['estado'] .'</span>';
-                echo '</div>';// Fechou .info-item
-
-                echo '<div class="info-item">';
-                echo '<p>Telefone:</p>';
-                echo '<span>'. $animal['telefone'] .'</span>';
-                echo '</div>';// Fechou .info-item
-
-                echo '</div>'; // Fechou .info
-                echo '</div>'; // fechou .popup-content
-                echo '</div>'; // fechou #popup-ID .popup
-            }
-            ?>
         </section>
     </main>
     <footer>

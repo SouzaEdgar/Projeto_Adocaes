@@ -79,7 +79,7 @@ header('Content-Type: text/html; charset=UTF-8');
                     </br>
                     </br>
                     </br>
-                    <button name= "update" id = "update" type="submit">update</button>
+                    <button name= "update" id = "update" type="submit">Salvar</button>
                 </div>
             </form>
 
@@ -238,7 +238,7 @@ header('Content-Type: text/html; charset=UTF-8');
             </div>
             <img src="Imagens/modelo3.jpeg">
         </div>
-        <a href="adotar.php" class="faca-um-animal-feliz">Faça um animal feliz!</a>
+        <a href="adotar/adotar.php" class="faca-um-animal-feliz">Faça um animal feliz!</a>
     </section>
 
     <footer>
