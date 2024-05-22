@@ -33,6 +33,7 @@ Visto que a página utiliza PHP e um BD, o XAMPP possibilita e facilita a execu�
 ### **Banco de Dados - Adocães**
 Para criar o Banco de Dados com uma massa de dados (para testes) nós preparamos um query SQL
 Onde a mesma se encontra neste projeto, com o nome de **criarBD_adocaes.sql**  
+
 **->** Abra o Painel de Controle do XAMPP  
 **->** Inicie o PHPMyAdmin e então clique em ADMIN  
    uma aba no seu navegador padrão ira ser aberta, essa aba permite você visualizar seus BDs  
@@ -48,6 +49,7 @@ Onde a mesma se encontra neste projeto, com o nome de **criarBD_adocaes.sql**
 ---
 ### **Utilizando a página**
 Agora com tudo pronto, volte ao painel do XAMPP e inicie o Apache (após iniciado clique em Admin, para facilitar)  
+
 **->** Com o localhost aberto, altere a URL do navegador para **localhost/adocaes/home.php**  
   
 **Pronto!** Você já esta utilizando o site em seu servidor local, dessa forma poderá criar perfis e visualizar a visão de um Adotante  
