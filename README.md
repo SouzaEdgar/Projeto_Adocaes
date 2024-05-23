@@ -25,7 +25,7 @@ Visto que a página utiliza PHP e um BD, o XAMPP possibilita e facilita a execu�
    e clique Next  
 **->** Selecione a linguagem e clique Next  
 **->** Agora com tudo configurado, clique Next para iniciar a instalação  
-**->** Após ser finalizada a instalação, você pode escoher já iniciar o XAMPP ou não  
+**->** Após ser finalizada a instalação, você pode escolher já iniciar o XAMPP ou não  
 **->** Agora com o XAMPP instalado, vá dentro do local de destino selecionado para o arquivo  
 **->** Entre na pasta htdocs e coloque a pasta adocaes extraida do download deste projeto.  
 
