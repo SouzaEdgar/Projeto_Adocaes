@@ -92,7 +92,7 @@ nav a:hover {
     display: flex;
     width: 80%;
     max-height: 100vh;
-    padding: 10px;
+    padding: 10px 0px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -103,10 +103,12 @@ nav a:hover {
     direction: rtl;
     margin: 0;
     padding: 0;
-} 
+}
 
-.animais-registrados {
+#animais-registrados {
     padding: 10px;
+    font-size: 35px;
+    margin-top: 2%;
 }
 
 h1 {
@@ -188,6 +190,7 @@ h2 {
     width: 180px;
     height: 40px;
     margin-bottom: 1.5%;
+    margin-right: 3%;
 }
 
 .botao-add:hover {
@@ -284,7 +287,7 @@ h2 {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin-top: -18px;
     justify-content: center;
     padding: 10px;
     overflow-y: auto;
