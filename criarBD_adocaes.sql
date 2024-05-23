@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 22/05/2024 às 16:01
+-- Tempo de geração: 23/05/2024 às 00:40
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -40,13 +40,13 @@ CREATE TABLE `adotantes` (
 --
 
 INSERT INTO `adotantes` (`idAdotantes`, `nomeAdotante`, `CPF`, `email`, `senha`) VALUES
-(1, 'João Silva', '123.456.789-01', 'joao@123.com', 'senha123'),
+(1, 'João Silva', '123.456.789-01', 'joao@example.com', 'senha123'),
 (2, 'Maria Oliveira', '234.567.890-12', 'maria@example.com', 'senha456'),
 (3, 'Carlos Santos', '345.678.901-23', 'carlos@example.com', 'senha789'),
 (4, 'Ana Souza', '456.789.012-34', 'ana@example.com', 'senhaABC'),
 (5, 'Lucas Pereira', '567.890.123-45', 'lucas@example.com', 'senhaDEF'),
 (6, 'Fernanda Lima', '678.901.234-56', 'fernanda@example.com', 'senhaGHI'),
-(7, 'Rodrigo Oliveira', '789.012.345-67', 'rodrigo@example.com', 'senhaJKL');
+(41, 'Letícia Rodrigues Costa', '89930543120', 'leticia.costa11@hotmail.com', '1234');
 
 -- --------------------------------------------------------
 
@@ -74,7 +74,8 @@ CREATE TABLE `animais` (
 --
 
 INSERT INTO `animais` (`idAnimais`, `nomeAnimal`, `raca`, `dataNascimento`, `genero`, `porte`, `cor`, `castrado`, `vacinas`, `observacao`, `tipo`, `ONGs_idONG`) VALUES
-(1, 'Bella', 'SRD', '2024-05-15', 'j', 'M', 'Preto', 'S', 'Todas', 'Gosta de passear, muito fofa', 'C', 2),
+(1, 'Bella', 'SRD', '2019-08-15', 'F', 'P', 'Branco e Marrom', '1', 'V8, Antirrábica', 'Adora brincar de buscar a bolinha', 'C', 1),
+(2, 'Coco', 'SRD', '2020-11-25', 'M', 'M', 'Preto', '0', 'V8, Antirrábica', 'Fica feliz ao ar livre', 'C', 2),
 (3, 'Teddy', 'SRD', '2017-06-10', 'M', 'G', 'Caramelo', '1', 'V8, Antirrábica', 'Sempre pronto para uma corrida', 'C', 3),
 (4, 'Lola', 'SRD', '2022-02-18', 'F', 'P', 'Cinza', '0', 'V8, Antirrábica', 'Apaixonada por brinquedos de pelúcia', 'G', 4),
 (5, 'Milo', 'SRD', '2018-09-05', 'M', 'M', 'Marrom Escuro', '1', 'V8, Antirrábica', 'Adora fazer truques', 'C', 5),
@@ -98,11 +99,11 @@ INSERT INTO `animais` (`idAnimais`, `nomeAnimal`, `raca`, `dataNascimento`, `gen
 (23, 'Mia', 'SRD', '2017-03-25', 'F', 'G', 'Cinza Listrado', '0', 'V4, Antirrábica', 'Gatinha esperta e brincalhona', 'G', 3),
 (24, 'Simba', 'SRD', '2020-07-08', 'M', 'P', 'Laranja', '1', 'V4, Antirrábica', 'Rei da casa', 'C', 4),
 (25, 'Nala', 'SRD', '2018-10-01', 'F', 'M', 'Tricolor', '0', 'V4, Antirrábica', 'Doce e carinhosa', 'C', 5),
+(26, 'Milo', 'SRD', '2019-01-22', 'M', 'P', 'Cinza', '1', 'V4, Antirrábica', 'Gosta de dormir no sol', 'G', 1),
 (27, 'Salem', 'SRD', '2019-05-15', 'M', 'G', 'Preto', '0', 'V4, Antirrábica', 'Misterioso e independente', 'G', 2),
 (28, 'Luna', 'SRD', '2021-08-20', 'F', 'M', 'Branco e Cinza', '0', 'V4, Antirrábica', 'Adora brincar com bolinhas de lã', 'G', 3),
 (29, 'Oreo', 'SRD', '2017-11-05', 'M', 'P', 'Branco e Preto', '1', 'V4, Antirrábica', 'Gosta de pular para lugares altos', 'G', 4),
-(30, 'Bella', 'SRD', '2022-03-10', 'F', 'G', 'Tricolor', '0', 'V4, Antirrábica', 'Afetuosa e brincalhona', 'C', 5),
-(58, 'Doutor Teste', 'SRD', '2019-05-21', 'M', 'P', 'Branco com manchas preto ', '1', 'V8, Antirrábica', 'Muito curioso e carinhoso, ama passear e brincar', 'C', 1);
+(30, 'Bella', 'SRD', '2022-03-10', 'F', 'G', 'Tricolor', '0', 'V4, Antirrábica', 'Afetuosa e brincalhona', 'C', 5);
 
 -- --------------------------------------------------------
 
@@ -131,7 +132,8 @@ INSERT INTO `endereco` (`idEndereco`, `bairro`, `numero`, `rua`, `cidade`, `esta
 (2, 'Bairro Sul', '456', 'Avenida B', 'Rio de Janeiro', 'RJ', '20020-020', NULL, 2),
 (3, 'Vila Norte', '789', 'Travessa C', 'Belo Horizonte', 'MG', '30030-030', NULL, 3),
 (4, 'Área Leste', '101', 'Praça D', 'Salvador', 'BA', '40040-040', NULL, 4),
-(5, 'Zona Oeste', '1122', 'Estrada E', 'Curitiba', 'PR', '80080-080', NULL, 5);
+(5, 'Zona Oeste', '1122', 'Estrada E', 'Curitiba', 'PR', '80080-080', NULL, 5),
+(45, 'Centro', '28', 'Rua Doutor Amelio', 'Diadema', 'SP', '09938150', 41, NULL);
 
 -- --------------------------------------------------------
 
@@ -152,11 +154,11 @@ CREATE TABLE `ongs` (
 --
 
 INSERT INTO `ongs` (`idONG`, `nomeOng`, `CNPJ`, `site`, `senha`) VALUES
-(1, 'Amor pelos Patinhas', '00000001', 'http://www.amorpelospatinhas.org', '12345'),
-(2, 'Protetores do Bichano', '23456789000012', 'http://www.protetoresdobichano.org', '1'),
-(3, 'Anjos de Quatro Patas', '34567890000123', 'http://www.anjosdequatropatas.org', '2'),
-(4, 'Vira-Latas Unidos', '45678901234567', 'http://www.viralatasunidos.org', '3'),
-(5, 'Adote um Amigo', '56789012345678', 'http://www.adoteumamigo.org', '4'),
+(1, 'Amor pelos Patinhas', '12345678900001', 'http://www.amorpelospatinhas.org', '123'),
+(2, 'Protetores do Bichano', '23456789000012', 'http://www.protetoresdobichano.org', ''),
+(3, 'Anjos de Quatro Patas', '34567890000123', 'http://www.anjosdequatropatas.org', ''),
+(4, 'Vira-Latas Unidos', '45678901234567', 'http://www.viralatasunidos.org', ''),
+(5, 'Adote um Amigo', '56789012345678', 'http://www.adoteumamigo.org', ''),
 (6, 'Animais fofos', '39558467000197', 'www.animaisfofos.com', '123'),
 (7, 'Dogs legais', '84564888000185', 'www.caeszinhos.com', '123456');
 
@@ -178,18 +180,14 @@ CREATE TABLE `telefone` (
 --
 
 INSERT INTO `telefone` (`idTelefone`, `numero`, `idAdotantes`, `idONG`) VALUES
-(1, '1122334455', NULL, 1),
+(1, '111111111', NULL, 1),
 (2, '222222222', NULL, 2),
 (3, '333333333', NULL, 3),
 (4, '444444444', NULL, 4),
-(5, '555555555', NULL, 5),
-(6, '313131341414', 1, NULL),
-(7, '313131341414', 2, NULL),
-(8, '11321312321', 3, NULL),
-(9, '11321312321', 4, NULL),
-(10, '12131231312', 5, NULL),
-(11, '12131231312', 6, NULL),
-(12, '12131231312', 7, NULL);
+(5, '555555555555', NULL, 5),
+(6, '313131341414', NULL, 6),
+(7, '313131341414', NULL, 7),
+(45, '11970231258', 41, NULL);
 
 -- --------------------------------------------------------
 
@@ -211,7 +209,36 @@ CREATE TABLE `urls` (
 --
 
 INSERT INTO `urls` (`idURL`, `url`, `nome`, `idONG`, `idAdotantes`, `idAnimais`) VALUES
-(56, 'data:image/jpeg;base64,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', NULL, NULL, NULL, 58);
+(139, 'https://www.zooplus.pt/magazine/wp-content/uploads/2021/11/tricolores_2.jpeg', 'Bella', NULL, NULL, 1),
+(141, 'https://www.petz.com.br/blog/wp-content/uploads/2021/03/raca-de-cachorro-preto.jpg', 'Coco', NULL, NULL, 2),
+(142, 'https://blog-static.petlove.com.br/wp-content/uploads/2023/09/25143323/como-cuidar-de-um-vira-lata-caramelo-petlove.jpg', 'Teddy', NULL, NULL, 3),
+(143, 'https://blog-static.petlove.com.br/wp-content/uploads/2024/02/17030436/Chartreux-Petlove.jpg', 'Lola', NULL, NULL, 4),
+(144, 'https://segredosdomundo.r7.com/wp-content/uploads/2022/01/30-racas-de-cachorro-marrom-mais-populares-do-mundo-1.jpg', 'Milo', NULL, NULL, 5),
+(145, 'https://static.ndmais.com.br/2021/10/spitz-branco-800x533.png', 'Zoe', NULL, NULL, 6),
+(146, 'https://cloudfront-us-east-1.images.arcpublishing.com/estadao/2P2JVDV5UNKNRPQWJVUZES4YNE.jpg', 'Oscar', NULL, NULL, 7),
+(147, 'https://www.adoropets.com.br/wp-content/uploads/2021/03/galgo-italiano-cinza.jpg', 'Mia', NULL, NULL, 8),
+(148, 'https://blog.cobasi.com.br/wp-content/webpc-passthru.php?src=https://blog.cobasi.com.br/wp-content/uploads/2021/06/dog-847048_960_720.png&nocache=1', 'Maximus', NULL, NULL, 9),
+(149, 'https://st4.depositphotos.com/22263232/25152/i/450/depositphotos_251521960-stock-photo-portrait-british-short-hair-brown.jpg', 'Canela', NULL, NULL, 10),
+(150, 'https://blog-static.petlove.com.br/wp-content/uploads/2021/07/Filhote-labrador-5.jpg', 'Dexter', NULL, NULL, 11),
+(151, 'https://fotos.amomeupet.org/uploads/fotos/1690854366_64c863de836c9_hd.jpg', 'Lily', NULL, NULL, 12),
+(152, 'https://blog-static.petlove.com.br/wp-content/uploads/2020/10/grey-tabby-petlove.jpg', 'Bento', NULL, NULL, 13),
+(153, 'https://blog.colombo.com.br/wp-content/uploads/2021/09/Bombain.jpg', 'Pretinha', NULL, NULL, 14),
+(154, 'https://t1.ea.ltmcdn.com/pt/posts/5/5/3/braco_alemao_de_pelo_curto_24355_7_600.jpg', 'Thor', NULL, NULL, 15),
+(155, 'https://blog-static.petlove.com.br/wp-content/uploads/2024/02/17024144/racas-de-gato-cinza-Petlove.jpg', 'Whiskers', NULL, NULL, 16),
+(156, 'https://img.myloview.com.br/fotomurais/cachorro-branco-e-preto-700-184847502.jpg', 'Mittens', NULL, NULL, 17),
+(157, 'https://gestoranimal.com.br/wp-content/uploads/2021/07/gato-de-pelo-curto-ingles-cinza-dietado.jpg', 'Oliver', NULL, NULL, 18),
+(158, 'https://porakaa.com.br/wp-content/uploads/2022/04/kulli-kittus-dCCMkInwKew-unsplash.jpg', 'Chloe', NULL, NULL, 19),
+(159, 'https://www.infoescola.com/wp-content/uploads/2013/05/Schipperke_707169673.jpg', 'Max', NULL, NULL, 20),
+(160, 'https://www.patasdacasa.com.br/sites/default/files/styles/article_detail_desktop/public/noticias/2020/06/racas-de-gatos-brancos-descubra-as-mais-comuns.jpg.webp?itok=PxsQu5D9', 'Lily', NULL, NULL, 21),
+(161, 'https://www.eusemfronteiras.com.br/wp-content/uploads/2023/03/Imagens-ESF-1-16.png', 'Leo', NULL, NULL, 22),
+(162, 'https://img.freepik.com/fotos-premium/gato-fofo-listrado-cinza-parado-ao-ar-livre-olhando-para-a-camera-em-uma-rua-de-verao_127089-12171.jpg', 'Mia', NULL, NULL, 23),
+(163, 'https://www.pedigree.com.br/sites/g/files/fnmzdf2401/files/2023-07/quantos-anos-vive-um-cachorro-01.jpg', 'Simba', NULL, NULL, 24),
+(164, 'https://st5.depositphotos.com/1913515/65893/i/450/depositphotos_658937880-stock-photo-tricolor-border-collie-puppy-lying.jpg', 'Nala', NULL, NULL, 25),
+(165, 'https://img.freepik.com/fotos-premium/lindo-gato-cinza-bonito-com-olhos-verdes-o-animal-de-estimacao-esta-na-cama_101881-517.jpg', 'Milo', NULL, NULL, 26),
+(166, 'https://blog-static.petlove.com.br/wp-content/uploads/2022/05/gato-preto-deitado-Petlove.jpg', 'Salem', NULL, NULL, 27),
+(167, 'https://img.freepik.com/fotos-premium/um-gato-cinza-e-branco-deitado-no-braco-de-um-sofa-conceito-de-bem-estar_543278-227.jpg', 'Luna', NULL, NULL, 28),
+(168, 'https://www.patasdacasa.com.br/sites/default/files/2023-10/gato-frajola1_0.jpg', 'Oreo', NULL, NULL, 29),
+(169, 'https://cdn.adtechpanda.com/fd3a12df-a179-4752-b0ba-d561c497fa54/-/format/jpeg/-/quality/lightest/', 'Bella', NULL, NULL, 30);
 
 --
 -- Índices para tabelas despejadas
@@ -275,31 +302,31 @@ ALTER TABLE `adotantes`
 -- AUTO_INCREMENT de tabela `animais`
 --
 ALTER TABLE `animais`
-  MODIFY `idAnimais` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
+  MODIFY `idAnimais` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 
 --
 -- AUTO_INCREMENT de tabela `endereco`
 --
 ALTER TABLE `endereco`
-  MODIFY `idEndereco` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+  MODIFY `idEndereco` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT de tabela `ongs`
 --
 ALTER TABLE `ongs`
-  MODIFY `idONG` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `idONG` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT de tabela `telefone`
 --
 ALTER TABLE `telefone`
-  MODIFY `idTelefone` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+  MODIFY `idTelefone` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT de tabela `urls`
 --
 ALTER TABLE `urls`
-  MODIFY `idURL` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+  MODIFY `idURL` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=170;
 
 --
 -- Restrições para tabelas despejadas
