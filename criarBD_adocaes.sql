@@ -45,8 +45,7 @@ INSERT INTO `adotantes` (`idAdotantes`, `nomeAdotante`, `CPF`, `email`, `senha`)
 (3, 'Carlos Santos', '345.678.901-23', 'carlos@example.com', 'senha789'),
 (4, 'Ana Souza', '456.789.012-34', 'ana@example.com', 'senhaABC'),
 (5, 'Lucas Pereira', '567.890.123-45', 'lucas@example.com', 'senhaDEF'),
-(6, 'Fernanda Lima', '678.901.234-56', 'fernanda@example.com', 'senhaGHI'),
-(41, 'Letícia Rodrigues Costa', '89930543120', 'leticia.costa11@hotmail.com', '1234');
+(6, 'Fernanda Lima', '678.901.234-56', 'fernanda@example.com', 'senhaGHI');
 
 -- --------------------------------------------------------
 
